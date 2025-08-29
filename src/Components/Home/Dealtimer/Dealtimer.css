@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.dealMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  width: 100%;
+  height: 80%;
+  /* background-color: aqua; */
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  position: absolute;
+  top: 18%;
+  left: 40%;
+  font-size: 36px;
+  font-weight: 500;
+}
+.sub {
+  position: absolute;
+  top: 30%;
+  left: 37%;
+  color: #949090;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sub2 {
+  position: absolute;
+  top: 36%;
+  left: 44%;
+  color: #949090;
+  font-size: 16px;
+  font-weight: 400;
+}
+.mainGrid {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 48%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+.timerGrid {
+  width: 40%;
+  height: 100%;
+  /* background-color: #949090; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.time {
+  width: 80%;
+  height: 80%;
+  /* background-color:antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.circle {
+  width: 80%;
+  height: 70%;
+  background-color: white;
+  border-radius: 50%;
+  /* position: relative; */
+}
+.time h4 {
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  font-size: 26px;
+  font-weight: 600;
+}
+.time p {
+  color: #949090;
+  font-size: 20px;
+}
+.btn2 {
+  width: 12%;
+  height: 8%;
+  /* background-color: aliceblue; */
+  position: absolute;
+  top: 80%;
+  left: 44%;
+}
+.btn2 button {
+  width: 100%;
+  height: 100%;
+  background-color: #ff6983;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 34px;
+}

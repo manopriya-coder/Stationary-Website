@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.mainFooter{
+    width: 100%;
+    height: 74%;
+    background-color: #FFF7F9;
+}
+.footerLogo{
+    width: 100%;
+    height: 30%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerLogo img{
+    width: 12%;
+    height: 16%;
+}
+.details{
+  width: 100%;
+  height: 40%;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subDetails{
+  width: 86%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.gridDetails{
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+.gridDetails h4{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10%;
+}
+.address{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.address i{
+  color: #ff6982;
+  font-size: 22px;
+}
+.address p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #8A8A8A;
+
+}
+.gridDetails p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #8A8A8A;
+  margin: 10px;
+}
+.subcribe input{
+  width: 80%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0 ;
+  background-color: #FFF7F9;
+}
+.subcribe{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+}
+.subcribe p{
+  color: #ff6982;
+}
+.subIcon{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.subIcon i{
+  color: #8A8A8A;
+  font-size: 22px;
+}
+.lastFooter{
+  width: 100%;
+  height: 12%;
+  margin-top: 6%;
+  /* background-color: white; */
+  border-top: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lastFooter p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #8A8A8A;
+}
