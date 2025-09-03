@@ -144,6 +144,9 @@ i {
 .menus i {
   color: black;
 }
+.dealsOffer p{
+  display: none;
+}
 .dealsOffer {
   width: 20%;
   height: 50%;
@@ -164,4 +167,91 @@ i {
   cursor: pointer;
   /* text-decoration: underline; */
   transition: all ease-out 0.6s;
+}
+
+
+@media (max-width: 768px) {
+  .baseNav {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navBar {
+    width: 95%;
+  }
+
+  .top {
+    /* flex-direction: column; */
+    /* height: 70%; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+
+  .logoDiv {
+    width: 20%;
+    height: auto;
+  }
+
+  .logo {
+    width: 80%;
+    height: auto;
+  }
+
+  .search {
+    width: 50%;
+    height: 30px;
+  }
+
+  .search h4 {
+    font-size: 10px;
+    margin: 6px;
+  }
+.navBarIcon p{
+  display: none;
+}
+  .navBarIcon {
+    width: 40%;
+    justify-content: space-evenly;
+  }
+
+  .bottom {
+    /* flex-direction: column; */
+    align-items: center;
+    height: auto;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .navCategory {
+    width: 50%;
+    height: 40px;
+  }
+
+  .navCategory h4,
+  .navCategory i {
+    font-size: 14px;
+  }
+
+  .menuItem {
+   display: none;
+  }
+
+  .menus h3 {
+    font-size: 14px;
+  }
+
+  .pink{
+   display: none;
+  }
+
+  .dealsOffer h3 {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .dealsOffer i {
+    font-size: 20px;
+  }
 }

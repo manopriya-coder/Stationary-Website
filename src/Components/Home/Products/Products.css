@@ -27,7 +27,7 @@ body {
   /* background-color: aqua; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   gap: 32px;
 }
 .products {
@@ -80,4 +80,46 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 54px;
+}
+
+
+@media (max-width: 768px) {
+  .mainProduct{
+    height: auto;
+  }
+  .mainProduct h1 {
+    font-size: 28px;
+  }
+
+  .grid {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    /* grid-template-rows: auto; */
+    gap: 20px;
+  }
+
+  .products {
+    height: auto;
+  }
+
+  .img {
+    height: 70%;
+  }
+
+  .content {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .innerContent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentIcon {
+    width: 40px;
+    height: 40px;
+  }
 }

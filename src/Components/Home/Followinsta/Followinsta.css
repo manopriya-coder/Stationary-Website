@@ -109,3 +109,47 @@ body {
   font-size: 14px;
   color: grey;
 }
+
+
+
+@media (max-width: 768px) {
+  .followMain{
+    height: 100%;
+  }
+  .hide{
+    display: none;
+  }
+  .instaGrid {
+    grid-template-columns: repeat(2, 1fr); /* from 5 → 3 */
+    gap: 15px;
+  }
+
+  .hoverIcon i {
+    font-size: 24px;
+    top: 40%;
+    left: 40%;
+  }
+  .head{
+    height: 5%;
+  }
+  .profile{
+    height: 55%;
+  }
+
+  .benefits{
+    height: 30%;
+  }
+  .subBen {
+    grid-template-columns: repeat(2, 1fr); /* from 4 → 2 */
+    gap: 15px;
+  }
+
+  .ben img {
+    width: 30%;
+    height: auto;
+  }
+
+  .ben p {
+    font-size: 12px;
+  }
+}

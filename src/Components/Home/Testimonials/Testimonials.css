@@ -128,3 +128,27 @@ body {
   background-color: #ff6983;
   cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+  .testimonial{
+    width: 80%;
+    height: 60%;
+  }
+  .mainTestimonial{
+    height: 50%;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pTag{
+    font-size: 10px;
+    gap: 0;
+  }
+  .nameRoll{
+    gap: 0;
+    font-size: 16px;
+  }
+  .dots{
+    width: 20%;
+  }
+}

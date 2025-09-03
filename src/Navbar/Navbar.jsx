@@ -108,6 +108,7 @@ function Navbar() {
           <div className="dealsOffer">
             <i class="ri-bookmark-line"></i>
             <h3 >Deals & Offer</h3>
+            <p>Menus</p>
           </div>
         </div>
       </div>

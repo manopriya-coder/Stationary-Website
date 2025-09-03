@@ -119,3 +119,44 @@ body {
   font-weight: 500;
   color: #8A8A8A;
 }
+
+
+@media (max-width: 768px) {
+  .footerLogo{
+    height: 10%;
+  }
+  .footerLogo img {
+    width: 20%;
+    height: auto;
+  }
+.details{
+  height: 70%;
+}
+  .subDetails {
+    grid-template-columns: repeat(2, 1fr); /* from 5 → 2 */
+    gap: 30px;
+  }
+
+  .gridDetails h4 {
+    font-size: 14px;
+  }
+
+  .gridDetails p,
+  .address p {
+    font-size: 12px;
+  }
+
+  .subcribe input {
+    font-size: 14px;
+  }
+
+  .subIcon i {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .lastFooter p {
+    font-size: 14px;
+    text-align: center;
+  }
+}

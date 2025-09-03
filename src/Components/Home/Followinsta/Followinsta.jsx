@@ -18,7 +18,7 @@ const Followinsta = () => {
       </div>
       <div className="profile">
         <div className="instaGrid">
-          <div className="insta">
+          <div className="insta hide">
             <img src={insta1} alt="" />
             <div className="hoverIcon">
               <i class="ri-instagram-line"></i>
