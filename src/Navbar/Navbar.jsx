@@ -11,10 +11,16 @@ import pad from "../assets/category-icon-7.png";
 import pen from "../assets/category-icon-8.png";
 import photo from "../assets/category-icon-9.png";
 import color from "../assets/category-icon-10.png";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigator = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const [isOpen2, setIsOpen2] = useState(false);
+  const toggleDropdown2 = () => setIsOpen2(!isOpen);
+
   return (
     <div className="baseNav">
       <div className="navBar">
@@ -85,11 +91,11 @@ function Navbar() {
 
           <div className="menuItem">
             <div className="menus">
-              <h3 className="pink">Home</h3>
+              <h3 className="pink" onClick={() => navigator("/")}>Home</h3>
               <i  class="ri-arrow-down-s-line pink"></i>
             </div>
             <div className="menus">
-              <h3 className="pink">Shop</h3>
+              <h3 className="pink" onClick={() => navigator("/shop")}>Shop</h3>
               <i class="ri-arrow-down-s-line pink"></i>
             </div>
             <div className="menus">
@@ -106,9 +112,36 @@ function Navbar() {
             </div>
           </div>
           <div className="dealsOffer">
-            <i class="ri-bookmark-line"></i>
-            <h3 >Deals & Offer</h3>
-            <p>Menus</p>
+            <i class="ri-bookmark-line hide"></i>
+            <h3 className="hide">Deals & Offer</h3>
+          </div>
+          <div className="phMenu" onClick={toggleDropdown2}>
+            <p>Menu</p>
+            {isOpen2 && (
+              <div className="navCategoryList2">
+                <div className="list2">
+                  
+                  <p onClick={() => navigator("/")}>Home</p>
+                </div>
+                <div className="list2">
+                 
+                  <p onClick={() => navigator("/shop")}>Shop</p>
+                </div>
+                <div className="list2">
+               
+                  <p>Collection</p>
+                </div>
+                <div className="list2">
+                 
+                  <p>Blog</p>
+                </div>
+                <div className="list2">
+                
+                  <p>Contact</p>
+                </div>
+                              
+              </div>
+            )}
           </div>
         </div>
       </div>

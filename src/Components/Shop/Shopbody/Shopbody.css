@@ -13,3 +13,10 @@ body {
     display: flex;
     /* background-color: bisque; */
 }
+
+@media (max-width: 768px) {
+  .combination{
+    height: 390%;
+  }
+  
+}
